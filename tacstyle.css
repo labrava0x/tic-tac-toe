@@ -1,0 +1,146 @@
+/* ==========================================
+   APPROVED DARK MINIMALIST STYLES
+   ========================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #000000; /* Pitch black void */
+  color: #ffffff;            /* Sharp, aggressive white */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+/* Header & Status */
+header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  letter-spacing: 6px;
+}
+
+.status {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #888888;
+  min-height: 1.5rem;
+}
+
+/* Name Inputs */
+.name-inputs {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.name-inputs input {
+  background: #000000;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 0.5rem 0.75rem;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  outline: none;
+  width: 130px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.name-inputs input:focus {
+  background: #111111;
+}
+
+.btn-small {
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #ffffff;
+  padding: 0.5rem 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.btn-small:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* The Battle Grid */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 110px);
+  grid-template-rows: repeat(3, 110px);
+  gap: 4px;
+  background-color: #ffffff; /* Sharp white grid lines */
+  border: 4px solid #ffffff;
+}
+
+.cell {
+  background-color: #000000;
+  border: none;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.1s ease;
+}
+
+.cell:hover:not(:disabled) {
+  background-color: #1a1a1a;
+}
+
+.cell:disabled {
+  cursor: not-allowed;
+  opacity: 0.9;
+}
+
+/* Main Action Button */
+.btn {
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #ffffff;
+  padding: 0.85rem 2rem;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
